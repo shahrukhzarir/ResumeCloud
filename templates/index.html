@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Resume</title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-full">
+        <div class="row">
+            <div class="col-lg-12 text-center v-center">
+                <h1>Shahrukh Zarir</h1>
+                <p class="lead">Add yourself to the email list if you're looking for a young developer!</p>
+                <br>
+                <br>
+                <br>
+                <form class="col-lg-12" action="{{url_for('prereg')}}" method="POST">
+                    <div class="input-group" style="width:340px;text-align:center;margin:0 auto;">
+                        <input class="form-control input-lg" title="email" placeholder="Enter your email address" type="email" name="email">
+                            <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="submit">Yes!</button></span>
+                            </div>
+                </form>
+            </div>
+            
+        </div>        <!-- /row -->
+        <div class="row">   
+            <div class="col-lg-12 text-center v-center">        
+                <h3> Job Postings PDF! </h3>
+                <form method="POST" action="{{url_for('upload')}}" enctype="multipart/form-data">
+                    <div class="form-group" style="width:340px;text-align:center;margin:0 auto;">
+                        <label for="inputFile">Job Posting</label>
+                        <input id="input-b2" name="inputFile" type="file" class="file" data-show-preview="false">
+                            <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="submit">Submit!</button></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+        <div class="row">
+            <div class="col-lg-12 text-center v-center" style="font-size:39pt;">
+                <a href="https://plus.google.com/101289792523771739858"><i class="icon-google-plus"></i></a>  <a href="https://www.facebook.com/Blendsomefruit"><i class="icon-facebook"></i></a>  <a href="https://twitter.com/ThePakiSRK"><i class="icon-twitter"></i></a>  <a href="https://github.com/shahrukhzarir"><i class="icon-github"></i></a>  <a href="https://ca.linkedin.com/in/shahrukhzarir"><i class="icon-pinterest"></i></a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <!-- /container full -->
+
+    <div class="container">
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3>Education</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>Bachelor of Engineering,  Software Engineering, University of Ontario Institute of Technology, Oshawa, ON </p> <p>2014-2018</p>
+                        <p>Graduation Date: April 2018</p>
+                        <p>Relevant Courses: Data Structures, Algorithms, Android Development, Data Management Systems, Machine Learning and Data Mining, Distributed Systems, and Software Design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3>Technical Skills</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>•	Languages: C, Java, Python, SQL </p>
+                        <p>•	Development Tools: UNIX/Linux, Bash, Junit, MySQL, Git/GitHub, Subversion</p>
+                        <p>•	Database Platforms: Sybase Workspace 2.1 (SQL), Microsoft SQL Server 2008/2012</p>
+                        <p> Design Projects: Configuration File Script Loader (GUI module In python), Doctor Appointment Scheduler Application (Android in Java), Particle Swarm Optimization and Differential Evolution Algorithm Calculator (Python and SciPy), Soccer Database Modeller (PHP)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3>Overview</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>•	Upcoming graduate offering a foundation in software development and engineering</p>
+                        <p>•	Passionate developer with experience in designing, constructing, and testing software applications</p>
+                        <p>•	Experience in software development and SDLC with an emphasis on test driven development focusing on agile and waterfall project management methodologies</p>
+                        <p>•	Experience working with co-workers to gather requirements, develop/integrate ideas, and present solutions and retrieve results</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3>RBC 2017 - Technical System Analyst Intern</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>May 2017 - Sep 2017</p>
+                            <p>Toronto, ON</p>
+                            <p>• Implemented several scripts in Java, Python and Bash to provide assistance on automation, logging, security/encryption purposes and testing</p>
+                            <p>• Assisted in developing real time web services</p>
+                            <p>• Compiled user manuals and software requirements specification (SRS) documents to provide clear understanding to developers and users, these documents include Javadocs, Support Guides and Development Guides</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3>RBC 2016 - Technical System Analyst Intern</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>May 2016 - Sep 2016</p>
+                            <p>Toronto, ON</p>
+                            <p>• Implemented several scripts in Java, Python and Bash to provide assistance on automation, logging, security/encryption purposes and testing</p>
+                            <p>• Assisted in developing real time web services</p>
+                            <p>• Compiled user manuals and software requirements specification (SRS) documents to provide clear understanding to developers and users, these documents include Javadocs, Support Guides and Development Guides</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3>Scotiabank 2015 - Associate Programmer Analyst Intern</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>• Assisted in developing software using shell scripting, Java and Python</p>
+                            <p>• Involved directly in the development and unit testing activities</p>
+                            <p>• Provided documentation for programs to improve usability for non-technical personnel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+    <!-- script references -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+
+</html>
